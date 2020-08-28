@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/example', function ()  
+ {      
+return "Hello javaTpoint";  
+}); 
+Route::get('/insert', function () {  
+  DB::insert('insert into contacts(name,email) values(?,?)',['bhanu developer','satishkumar89716@gmail.com']);  
+}); 
+Route::get('/insertUser', function () {  
+    DB::insert('insert into users(name,email) values(?,?)',['bhanu developer','satishkumar89716@gmail.com']);  
+  }); 
